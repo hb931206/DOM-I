@@ -100,13 +100,14 @@ midp[2].textContent = siteContent["main-content"]["services-content"];
 midp[3].textContent = siteContent["main-content"]["product-content"];
 midp[4].textContent = siteContent["main-content"]["vision-content"];
 
-// contact
-const con = document.querySelector(".contact");
-con.textContent = siteContent["contact-h4"]["Contact"];
+const conth = document.querySelector(".contact h4");
+conth.textContent = siteContent["contact"]["contact-h4"];
 
-const conp = document.querySelectorAll(".contact");
-conp[0].textContent = siteContent["contact"]["address"];
+const contp = document.querySelectorAll(".contact p");
+contp[0].textContent = siteContent["contact"]["address"];
+contp[1].textContent = siteContent["contact"]["phone"];
+contp[2].textContent = siteContent["contact"]["email"];
 
 // footer
-let foot = document.querySelectorAll("footer");
+const foot = document.querySelector("footer");
 foot.textContent = siteContent["footer"]["copyright"];
