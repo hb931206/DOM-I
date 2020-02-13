@@ -60,3 +60,12 @@ document.querySelector("nav a:nth-child(3)").textContent = "Vision";
 document.querySelector("nav a:nth-child(4)").textContent = "Features";
 document.querySelector("nav a:nth-child(5)").textContent = "About";
 document.querySelector("nav a:nth-child(6)").textContent = "Contact";
+
+// H1 and button
+const title = document.querySelector(".cta-text h1");
+title.textContent = siteContent["cta"]["h1"];
+
+const button = document.querySelector(".cta .cta-text button");
+button.textContent = "Get Started";
+
+// P is in the middle Section
