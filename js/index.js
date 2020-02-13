@@ -53,15 +53,20 @@ let mid = document.getElementById("middle-img");
 mid.src = "img/mid-page-accent.jpg";
 
 // Nav
+const navg = document.querySelectorAll("nav a");
+navg[0].textContent = siteContent["nav"]["nav-item-1"];
+navg[1].textContent = siteContent["nav"]["nav-item-2"];
+navg[2].textContent = siteContent["nav"]["nav-item-3"];
+navg[3].textContent = siteContent["nav"]["nav-item-4"];
+navg[4].textContent = siteContent["nav"]["nav-item-5"];
+navg[5].textContent = siteContent["nav"]["nav-item-6"];
 
-document.querySelector("nav a").textContent = "Services";
-document.querySelector("nav a:nth-child(2)").textContent = "Product";
-document.querySelector("nav a:nth-child(3)").textContent = "Vision";
-document.querySelector("nav a:nth-child(4)").textContent = "Features";
-document.querySelector("nav a:nth-child(5)").textContent = "About";
-document.querySelector("nav a:nth-child(6)").textContent = "Contact";
+const cola = document.querySelectorAll("a");
+cola.forEach(element => {
+  element.style.color = "green";
+});
 
-// H1 and button
+// // H1 and button
 const title = document.querySelector(".cta-text h1");
 title.textContent = siteContent["cta"]["h1"];
 
@@ -84,9 +89,12 @@ midp[3].textContent = siteContent["main-content"]["product-content"];
 midp[4].textContent = siteContent["main-content"]["vision-content"];
 
 // contact
-const contact = document.querySelector.querySelector(".contact h4");
-contact.textContent = siteContent["contact-h4"]["Contact"];
+const con = document.querySelector(".contact");
+con.textContent = siteContent["contact-h4"]["Contact"];
+
+const conp = document.querySelectorAll(".contact");
+conp[0].textContent = siteContent["contact"]["address"];
 
 // footer
-const foot = document.querySelector("footer");
-foot.textContent = "Copyright Great Idea! 2018";
+let foot = document.querySelectorAll("footer");
+foot.textContent = siteContent["footer"]["copyright"];
