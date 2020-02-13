@@ -68,4 +68,25 @@ title.textContent = siteContent["cta"]["h1"];
 const button = document.querySelector(".cta .cta-text button");
 button.textContent = "Get Started";
 
-// P is in the middle Section
+// Middle Section is in the middle Section
+const midtitle = document.querySelectorAll(".text-content h4");
+midtitle[0].textContent = siteContent["main-content"]["features-h4"];
+midtitle[1].textContent = siteContent["main-content"]["about-h4"];
+midtitle[2].textContent = siteContent["main-content"]["services-h4"];
+midtitle[3].textContent = siteContent["main-content"]["product-h4"];
+midtitle[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const midp = document.querySelectorAll(".text-content p");
+midp[0].textContent = siteContent["main-content"]["features-content"];
+midp[1].textContent = siteContent["main-content"]["about-content"];
+midp[2].textContent = siteContent["main-content"]["services-content"];
+midp[3].textContent = siteContent["main-content"]["product-content"];
+midp[4].textContent = siteContent["main-content"]["vision-content"];
+
+// contact
+const contact = document.querySelector.querySelector(".contact h4");
+contact.textContent = siteContent["contact-h4"]["Contact"];
+
+// footer
+const foot = document.querySelector("footer");
+foot.textContent = "Copyright Great Idea! 2018";
