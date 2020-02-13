@@ -42,13 +42,21 @@ const siteContent = {
   }
 };
 
-// Example: Update the img src for the logo
+// Example: Update the img src for the logo (Images)
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-// images
 let cta = document.getElementById("cta-img");
 cta.src = "img/header-img.png";
 
 let mid = document.getElementById("middle-img");
 mid.src = "img/mid-page-accent.jpg";
+
+// Nav
+
+document.querySelector("nav a").textContent = "Services";
+document.querySelector("nav a:nth-child(2)").textContent = "Product";
+document.querySelector("nav a:nth-child(3)").textContent = "Vision";
+document.querySelector("nav a:nth-child(4)").textContent = "Features";
+document.querySelector("nav a:nth-child(5)").textContent = "About";
+document.querySelector("nav a:nth-child(6)").textContent = "Contact";
