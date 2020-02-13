@@ -66,6 +66,18 @@ cola.forEach(element => {
   element.style.color = "green";
 });
 
+const newContent = document.createElement("a");
+newContent.textContent = "Ideas";
+newContent.style.color = "green";
+
+const conwork = document.createElement("a");
+conwork.textContent = "Work";
+conwork.style.color = "green";
+
+const navapp = document.querySelector("nav");
+navapp.appendChild(newContent);
+navapp.appendChild(conwork);
+
 // // H1 and button
 const title = document.querySelector(".cta-text h1");
 title.textContent = siteContent["cta"]["h1"];
